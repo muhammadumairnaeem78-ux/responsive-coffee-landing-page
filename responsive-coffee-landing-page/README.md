@@ -37,4 +37,4 @@ Muhammad Umair Naeem
 
 Email: muhammadumairnaeem16@gmail.com
 
-LinkedIn: Muhammad Umair Naeem
+LinkedIn: www.linkedin.com/in/muhammad-umair-naeem-33655025a
