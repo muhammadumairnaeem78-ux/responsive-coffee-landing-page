@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mocha Mousse Roasters</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">Mocha Mousse</div>
+      <button class="mobile-menu-btn" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#products">Blends</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Crafted for the perfect morning.</h1>
+      <p>Experience the warmth of freshly roasted beans and ethereal blends, delivered straight to your cup.</p>
+      <a href="#products" class="btn">Explore Our Blends</a>
+    </section>
+
+    <section id="products" class="products-section" aria-labelledby="products-heading">
+      <h2 id="products-heading">Our Signature Roasts</h2>
+      <div class="product-grid">
+        
+        <article class="product-card">
+          <h3>Ethereal Blue</h3>
+          <p>A light, crisp morning blend with subtle floral notes and a smooth, refreshing finish.</p>
+        </article>
+
+        <article class="product-card">
+          <h3>Mocha Mousse Dark</h3>
+          <p>Our namesake dark roast. Rich, chocolatey, deeply comforting, and grounded.</p>
+        </article>
+
+        <article class="product-card">
+          <h3>Moonlit Decaf</h3>
+          <p>All the rich flavor of our signature roasts, crafted perfectly for a peaceful evening.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Get in Touch</h2>
+      
+      <address class="contact-info">
+        <p>
+          <strong>Email:</strong> 
+          <a href="mailto:muhammadumairnaeem16@gmail.com">muhammadumairnaeem16@gmail.com</a>
+        </p>
+        <p>
+          <strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/muhammad-umair-naeem-33655025a" target="_blank" rel="noopener noreferrer">Muhammad Umair Naeem</a>
+        </p>
+      </address>
+
+      <h3 class="newsletter-heading">Or stay in the loop</h3>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required aria-describedby="email-error">
+          <span class="error-message" id="email-error" aria-live="polite">Please enter a valid email address.</span>
+        </div>
+        <button type="submit" class="btn">Subscribe</button>
+        <p id="success-message" class="success-message hidden" aria-live="polite">Thanks for subscribing!</p>
+      </form>
+    </section>
+    </main>
+
+  <footer>
+    <p>&copy; 2026 Mocha Mousse Roasters. Designed with HTML5, CSS3, & JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
